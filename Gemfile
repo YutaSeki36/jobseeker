@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sqlite3', groups: %w(test development), require: false
-
+ruby '2.2.3'
 group :production do
   gem 'rails_12factor'
   gem 'pg'
