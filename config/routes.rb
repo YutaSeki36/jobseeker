@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root to: "home#index"
   resources :events
-
+  devise_for :users
   get 'calendar/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
