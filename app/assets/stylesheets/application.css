@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require fullcalendar
+ *= require_tree .
+ *= require_self
+*/
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+body{
+  font-family:Batang;
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+.boxContainer {
+  padding-left:3%;
+  padding-bottom:5%;
+	overflow: hidden;
+}
+
+.box {
+  margin-right: 5%;
+  width:30%;
+  min-height: 50px;
+  height: auto !important;
+  height: 50px;
+	float: left;
+}
+
+/* clearfix */
+.boxContainer:before,
+.boxContainer:after {
+    content: "";
+    display: table;
+}
+
+.boxContainer:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.boxContainer {
+    zoom: 1;
+}
+
+.comp_list{
+  font-size:25px;
+}
+
+.inner_list{
+  display: block;
+  font-size: 20px;
+  margin-left:5%;
+  margin-bottom: 3%;
+}
+
+.plus_icon{
+  display: block;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.calendar{
+  width:60%;
+  float: left;
+}

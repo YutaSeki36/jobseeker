@@ -1,0 +1,37 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br>
+    <%= f.datetime_select :end %>
+  </div>
+  <div class="field">
+    <%= f.label :condition %><br>
+    <%= f.select :condition, [["セミナー参加", "セミナー参加"], ["面談", "面談"], ["インターン", "インターン"], ["書類選考", "書類選考"], ["一次面接", "一次面接"], ["2次面接", "2次面接"], ["3次面接", "3次面接"], ["最終面接","最終面接"],["結果待ち", "結果待ち"]] %>
+  </div>
+  <div class="field">
+    <%= f.label :clothe %><br>
+    <%= f.select :clothe, [["スーツ","suit"],["私服","shirt"]] %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
