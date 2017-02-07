@@ -1,19 +1,25 @@
 
 <body>
-
+<div class="bg_c">
 <header>
-  <h1>JobSeeker</h1>
+  <div class="header_title">
+    <h1>JobSeeker</h1>
+  </div>
+  <div class="header_info">
+    ログイン中: <strong><%= current_user.email %></strong>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  </div>
 </header>
 <div class="boxContainer">
 	<div class="box"><p class="comp_list">選考中企業</p>
     <table>
       <thead>
         <tr>
-          <th>企業名</th>
-          <th>次回選考</th>
-          <th>服装</th>
-          <th>日時</th>
-          <th colspan="3"></th>
+          <th class="list_midasi">企業名</th>
+          <th class="list_midasi">次回選考</th>
+          <th class="list_midasi">服装</th>
+          <th class="list_midasi">日時</th>
+          <th colspan="2"></th>
         </tr>
       </thead>
 
@@ -24,9 +30,9 @@
             <td><%= event.condition %></td>
             <td><%=#服装画像表示
               if event.clothe=='suit'
-                 image_tag '/images/icon.png' , :size => '25x28'
+                 image_tag '/images/icon1.png' , :size => '25x28'
               else
-                 image_tag '/images/icon2.png' , :size => '25x28'
+                 image_tag '/images/icon2_1.png' , :size => '25x28'
               end
               %></td>
             <td><%=#日付部分だけ表示
@@ -34,18 +40,17 @@
                  a.gsub!(/-/,'/')
                  a[5,5]
                 %></td>
-            <td><%= link_to 'Show', event %></td>
-            <td><%= link_to 'Edit', edit_event_path(event) %></td>
-            <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to image_tag('/images/edit.png',:size => '20x20'), edit_event_path(event) %></td>
+            <td><%= link_to  image_tag('/images/batsu.png',:size => '20x20'), event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
     <div class="plus_icon">
-    <%= link_to image_tag('/images/plus.png' , :size => '50x50'),controller: 'events', action: 'new'%>
+    <%= link_to image_tag('/images/plus1.png' , :size => '50x50'),controller: 'events', action: 'new'%>
   </div>
   </div>
 	<div id="calendar" class="calendar"></div>
 </div>
-
+</div>
 </body>

@@ -32,9 +32,35 @@ body{
 
 header{
     width: 100%;
-    height: 30px;
-    font-size: 25px;
-    margin-bottom: 30px;
+    height: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.header_title{
+  position: relative;
+  float: left;
+  height: 40px;
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+.header_title>h1{
+  margin: 0px;
+}
+
+.header_info{
+  position: relative;
+  width:280px;
+  height: 40px;
+  margin-left: auto;
+  line-height: 40px;
+}
+
+.header_info > a{
+  color: #F2F2F2;
+  text-decoration: underline;
 }
 
 .bg_c{
@@ -47,6 +73,34 @@ background: #2b5876; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #2b5876 , #4e4376); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #2b5876 , #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 color: #F2F2F2;
+}
+
+.wrap{
+margin: 15% 5% 0;
+height: 100%;
+width: 100%;
+}
+
+
+blockquote.style2 {
+  width:50%;
+  float: left;
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  padding-left: 10px;
+  border-left: 3px solid #ccc;
+}
+
+blockquote > span{
+  font-family:Batang;
+  font-size: 30px;
+}
+
+.log__in{
+  float: left;
+
 }
 
 .title{
@@ -103,18 +157,27 @@ color: #F2F2F2;
 }
 
 .boxContainer {
-  padding-left:3%;
+  margin:0px 5%;
   padding-bottom:5%;
 	overflow: hidden;
 }
 
 .box {
-  margin-right: 5%;
-  width:30%;
+  margin-right: 10%;
+  width:40%;
   min-height: 50px;
   height: auto !important;
   height: 50px;
 	float: left;
+}
+
+table{
+  font-size: 20px;
+}
+
+td{
+  margin:5px auto 5px auto;
+  padding:0 7px 7px 7px;
 }
 
 /* clearfix */
@@ -134,7 +197,12 @@ color: #F2F2F2;
 }
 
 .comp_list{
+  height: 35px;
   font-size:25px;
+}
+
+.box > p{
+  margin: 3px;
 }
 
 .inner_list{
@@ -151,6 +219,7 @@ color: #F2F2F2;
 }
 
 .calendar{
-  width:60%;
+  width:50%;
+  margin-left: auto;
   float: left;
 }
