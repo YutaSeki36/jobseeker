@@ -1,2 +1,14 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="bg_c">
+<div class="title">
+  <div class="title_sub">就活生のためのスケジュール管理アプリ</div>
+  <div class="title_main">JobSeeker</div>
+</div>
+<div class="buttons">
+  <div class="sign_up">
+    <%= link_to "サインアップ", new_user_registration_path, :class => "buttons"%>
+  </div>
+  <div class="log_in">
+    <%= link_to "ログイン", new_user_session_path %>
+  </div>
+</div>
+</div>

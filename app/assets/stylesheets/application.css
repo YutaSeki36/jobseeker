@@ -34,6 +34,38 @@ header{
     margin-bottom: 30px;
 }
 
+.bg_c{
+position: relative;
+width:100%;
+height: 1200px;
+background: #2b5876; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2b5876 , #4e4376); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2b5876 , #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #F2F2F2;
+}
+
+.title{
+  position: relative;
+  display: block;
+  height: 10%;
+  padding:200px 20px 0px;
+  text-align: center;
+}
+
+.title_sub{
+  display: block;
+  height:50px;
+  font-size: 30px;
+}
+.title_main{
+  display: block;
+  height: 50px;
+  font-size: 50px;
+}
+
+.buttons{
+  color: #F2F2F2;
+}
 
 .boxContainer {
   padding-left:3%;
