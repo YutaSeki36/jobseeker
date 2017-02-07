@@ -14,10 +14,12 @@
  *= require_tree .
  *= require_self
 */
-@import "bootstrap";
-
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
+}
+
+a {
+text-decoration: none;
 }
 
 table{
@@ -36,7 +38,9 @@ header{
 }
 
 .bg_c{
-position: relative;
+position: absolute;
+top:0;
+left: 0;
 width:100%;
 height: 1200px;
 background: #2b5876; /* fallback for old browsers */
@@ -66,6 +70,36 @@ color: #F2F2F2;
 
 .buttons{
   color: #F2F2F2;
+  overflow: hidden;
+  margin:100px 40% 0px;
+}
+
+.sign_up{
+  display: block;
+  width: 80px;
+  height:30px;
+  padding-top: 10px;
+  float: left;
+  border: thin solid #F2F2F2;
+}
+
+.log_in{
+  display: block;
+  width: 80px;
+  height:30px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: auto;
+  border: thin solid #F2F2F2;
+}
+
+.buttons > a{
+  color: #F2F2F2;
+}
+
+.log_in{
+  display: block;
+
 }
 
 .boxContainer {
