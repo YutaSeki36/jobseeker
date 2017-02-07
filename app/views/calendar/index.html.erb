@@ -6,7 +6,8 @@
     <h1>JobSeeker</h1>
   </div>
   <div class="header_info">
-    ログイン中: <strong><%= current_user.email %></strong>
+    <!--emailの長さでログアウトが消える。一時的に表示をログアウトだけにする-->
+    <!--ログイン中: <strong><%= current_user.email %></strong>-->
     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
   </div>
 </header>
