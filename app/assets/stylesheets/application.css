@@ -81,7 +81,6 @@ height: 100%;
 width: 100%;
 }
 
-
 blockquote.style2 {
   width:50%;
   float: left;
@@ -125,13 +124,14 @@ blockquote > span{
 .buttons{
   color: #F2F2F2;
   overflow: hidden;
-  margin:100px 40% 0px;
+  margin:100px 35% 0px;
 }
 
 .sign_up{
   display: block;
-  width: 80px;
+  width: 100px;
   height:30px;
+  text-align: center;
   padding-top: 10px;
   float: left;
   border: thin solid #F2F2F2;
@@ -139,7 +139,7 @@ blockquote > span{
 
 .log_in{
   display: block;
-  width: 80px;
+  width: 100px;
   height:30px;
   text-align: center;
   padding-top: 10px;
